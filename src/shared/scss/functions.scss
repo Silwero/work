@@ -1,0 +1,5 @@
+@import './base.scss';
+
+@function rem($px, $baseSize: 18) {
+  @return ($px / $base) * 1rem;
+}

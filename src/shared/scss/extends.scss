@@ -1,0 +1,28 @@
+// clearfix
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// List reset
+%listreset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Ellipsis
+%ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// default transition
+%transition {
+  transition: all .3s;
+}

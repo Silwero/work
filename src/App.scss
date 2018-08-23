@@ -1,0 +1,10 @@
+@import 'libs/scss/bootstrap.scss';
+@import './shared/scss/variables.scss';
+
+.App {
+  background: $bgGray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

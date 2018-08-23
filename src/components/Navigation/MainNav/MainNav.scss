@@ -1,0 +1,24 @@
+@import '../../../shared/scss/extends.scss';
+@import '../../../shared/scss/variables.scss';
+
+.main-nav {
+  border-right: 1px solid $extraLightGray;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  @extend %listreset;
+  display: flex;
+}
+
+.main-nav a {
+  display: block;
+  color: $mediumGray;
+  padding: 0 12px;
+  transition: all .3s;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+  }
+}

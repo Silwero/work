@@ -1,0 +1,20 @@
+// size mixin
+@mixin size($width, $height:$width) {
+  width: $width;
+  height: $height;
+}
+
+// media mixin
+$breakpoints: (
+  mobile-xxs: 375px,
+	mobile-xs: 639px,
+	mobile: 767px,
+	tablet: 991px,
+	tablet-landscape: 1219px
+);
+
+@mixin media($size) {
+  @media screen and (max-width: map-get($breakpoints, $size)) {
+    @content;
+	}
+}
