@@ -891,3 +891,12 @@ template {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  font-family: "Adobe Caslon Pro", Arial, sans-serif;
+  font-size: 3.55556rem;
+  font-weight: 400;
+  line-height: 1em; }
