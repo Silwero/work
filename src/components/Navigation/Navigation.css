@@ -1,0 +1,17 @@
+.navigation {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  display: flex;
+  align-items: center; }
+  .navigation > div {
+    border-right: 1px solid #e5e5e5; }
+    .navigation > div > :last-child {
+      background-repeat: 0; }
+
+.cart {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  cursor: pointer; }
