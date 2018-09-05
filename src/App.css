@@ -302,8 +302,8 @@ template {
 
 .container {
   width: 100%;
-  padding-right: 23px;
-  padding-left: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -321,16 +321,16 @@ template {
 
 .container-fluid {
   width: 100%;
-  padding-right: 23px;
-  padding-left: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -23px;
-  margin-left: -23px; }
+  margin-right: -20px;
+  margin-left: -20px; }
 
 .no-gutters {
   margin-right: 0;
@@ -349,8 +349,8 @@ template {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 23px;
-  padding-left: 23px; }
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .col {
   flex-basis: 0;
@@ -1270,38 +1270,44 @@ template {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
-h1 {
+h1,
+.h1 {
   font-family: "Adobe Caslon Pro", "Source Serif Pro", "Times New Roman", serif;
   font-size: 4rem;
   line-height: 1em;
   font-weight: normal; }
 
-h2 {
+h2,
+.h2 {
   font-family: "Adobe Caslon Pro", "Source Serif Pro", "Times New Roman", serif;
   font-size: 2.75rem;
   line-height: 1em;
   font-weight: normal; }
 
-h3 {
+h3,
+.h3 {
   font-family: "Gilroy", "Roboto", Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.16667em;
   font-weight: bold; }
 
-h4 {
+h4,
+.h4 {
   font-family: "Vollkorn", "Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: normal; }
 
-h5 {
+h5,
+.h5 {
   font-family: "Vollkorn", "Times New Roman", serif;
   font-size: 1.125rem;
   line-height: 0.08681em;
   font-weight: normal;
   letter-spacing: -1%; }
 
-h6 {
+h6,
+.h6 {
   font-family: "Vollkorn", "Times New Roman", serif;
   font-size: 0.875rem;
   line-height: 1.42857em;

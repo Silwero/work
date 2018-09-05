@@ -1,3 +1,30 @@
+@import '../../shared/scss/variables.scss';
+
 .columns {
-  padding: 0 ;
+  max-width: 1012px;
+  margin: 0 auto;
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    height: auto;
+
+    & > div {
+      height: 100%;
+    }
+
+    .column-wrapper {
+      height: 100%;
+    }
+  }
+}
+
+.colored-columns {
+  color: $primaryBlue;
+}
+
+.columns-wrapped {
+  max-width: 965px;
 }

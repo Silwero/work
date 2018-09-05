@@ -1,2 +1,17 @@
 .columns {
-  padding: 0; }
+  max-width: 1012px;
+  margin: 0 auto; }
+  .columns .slick-track {
+    display: flex; }
+  .columns .slick-slide {
+    height: auto; }
+    .columns .slick-slide > div {
+      height: 100%; }
+    .columns .slick-slide .column-wrapper {
+      height: 100%; }
+
+.colored-columns {
+  color: #009bd8; }
+
+.columns-wrapped {
+  max-width: 965px; }

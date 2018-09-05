@@ -88,3 +88,21 @@
   font-size: rem(24);
   line-height: em(25, 24);
 }
+
+%mobile-h2 {
+  font-size: rem(30);
+  font-family: $generalFont;
+  line-height: em(31, 30);
+}
+
+%mobile-p-medium {
+  font-size: rem(16);
+  line-height: em(20, 16);
+  font-family: $subFont;
+}
+
+%mobile-p-small {
+  font-size: rem(14);
+  line-height: em(20, 16);
+  font-family: $subFont;
+}

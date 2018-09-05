@@ -8,7 +8,7 @@ export default class componentName extends Component {
     return (
       <header className="header">
         <div className="logo">
-          <a href="#" title="Home Page">
+          <a href="#1" title="Home Page">
             <img src={Logo} alt="Level Sleep" className="logo"/>
           </a>
         </div>

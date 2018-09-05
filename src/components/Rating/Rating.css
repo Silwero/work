@@ -1,0 +1,10 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.rating-link a {
+  font-size: 0.875rem;
+  text-decoration: underline;
+  margin-left: 8px; }

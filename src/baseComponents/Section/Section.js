@@ -2,24 +2,61 @@ import React from 'react';
 import Icons from './../../components/Icons/Icons';
 import './Section.css';
 import Columns from './../../components/Columns/Columns';
+import { Container } from 'reactstrap';
+import Rating from './../../components/Rating/Rating';
 
 
 const Section = (props) => {
   const Icon = Icons[props.icon];
+
   let columns = null;
   if (props.columns) {
-    columns = <Columns data={props.columns} />;
+    columns = <Columns
+      wrappedColumns={props.wrappedColumns}
+      colored={props.colored}
+      data={props.columns} />;
+  }
+
+  let description = null;
+  if (props.description) {
+    description = <div className="section-description">{props.description}</div>;
+  }
+
+  let img = null;
+  if (props.img) {
+    img = <div className="section-img">
+      <img src={props.img} alt="Alt text" />
+    </div>;
+  }
+
+  let topIcon = null;
+  if (props.topIcon) {
+    const TopIcon =  Icons[props.topIcon];
+    topIcon = <div className="section-top-icon">
+      <TopIcon classes={'section-top-icon' + props.topIcon} />
+    </div>;
+  }
+
+  let rating = null;
+  if (props.rating) {
+    rating = <Rating stars={props.rating} />;
   }
 
   return (
-    <section className="section">
-      <div className="section-icon">
-        <Icon />
-        <h2 className="section-header">
-          {props.header}
-        </h2>
-      </div>
-      {columns}
+    <section className={'section' + (props.dark ? ' section-dark' : '') + (props.bordered ? ' section-bordered' : '')}>
+      <Container>
+        <div className={'section-head' + (props.topIcon ? ' section-header-with-icon' : '')}>
+          {topIcon}
+          {Icon ? <Icon classes="section-icon" /> : null}
+          <h2 className="section-header">
+            {props.header}
+          </h2>
+          {description}
+          {rating}
+        </div>
+        {img}
+        {columns}
+      </Container>
     </section>
   );
 };

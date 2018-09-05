@@ -1,2 +1,11 @@
 .inline-icon {
   margin-right: 11px; }
+
+.icon {
+  display: inline-block; }
+
+.column-icon {
+  margin-bottom: 20px; }
+
+.section-icon {
+  margin-bottom: 30px; }

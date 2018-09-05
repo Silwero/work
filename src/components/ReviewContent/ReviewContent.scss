@@ -1,0 +1,61 @@
+@import '../../shared/scss/variables.scss';
+@import '../../shared/scss/extends.scss';
+
+.review-video {
+  position: relative;
+}
+
+.review-video .play-btn {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+}
+
+.reviewer {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  flex: 1 0 56px;
+  min-width: 56px;
+  max-width: 56px;
+}
+
+.reviewer-info {
+  padding: 0 11px;
+}
+
+.reviewer-name {
+  @extend %mobile-p-medium;
+  margin-bottom: 5px;
+}
+
+.reviewer-type {
+  @extend %mobile-p-small;
+}
+
+.avatar {
+  border: 1px solid $avatarBorder;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 48px;
+  }
+}

@@ -5,10 +5,10 @@ const MainNav = () => {
   return (
     <nav className="main-nav">
       <ul>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Our Research</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">FAQs</a></li>
+        <li><a href="#1">Shop</a></li>
+        <li><a href="#1">Our Research</a></li>
+        <li><a href="#1">Reviews</a></li>
+        <li><a href="#1">FAQs</a></li>
       </ul>
     </nav>
   );
