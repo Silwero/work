@@ -8,62 +8,30 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// SCSS
 
-html {
-  font-size: $baseFontSize;
-}
+// Base
+@import './shared/scss/reset';
+@import './baseComponents/Button/Button';
+@import './baseComponents/Checkbox/Checkbox';
+@import './baseComponents/Section/Section';
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  color: $fontLightBlack;
-}
+// Global components
+@import './global/Header/Header';
+@import './global/Footer/Footer';
 
-.App {
-  background: $bgGray;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-a {
-  color: $primaryBlue;
-  font-family: $secondaryFont;
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1,
-.h1 {
-  @extend %h1
-}
-
-h2,
-.h2 {
-  @extend %h2
-}
-
-h3,
-.h3 {
-  @extend %h3
-}
-
-h4,
-.h4 {
-  @extend %h4
-}
-
-h5,
-.h5 {
-  @extend %h5
-}
-
-h6,
-.h6 {
-  @extend %h6
-}
+// Components
+@import './components/CheckProduct/CheckProduct';
+@import './components/Columns/Columns';
+@import './components/Icons/Icons';
+@import './components/Navigation/Navigation';
+@import './components/Navigation/MainNav/MainNav';
+@import './components/Navigation/ContactUs/ContactUs';
+@import './components/ProductSlider/ProductSlider';
+@import './components/Rating/Rating';
+@import './components/ReviewContent/ReviewContent';
+@import './components/SelectSize/SelectSize';
+@import './components/SelectSize/SizeItem/SizeItem';
+@import './components/TextContent/TextContent';
+@import './components/Review/Review';
+@import './components/Review/ReviewerInfo/ReviewerInfo';

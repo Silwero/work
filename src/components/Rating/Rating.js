@@ -1,5 +1,4 @@
 import React from 'react';
-import './Rating.css';
 import Icons from './../Icons/Icons';
 
 const Rating = (props) => {

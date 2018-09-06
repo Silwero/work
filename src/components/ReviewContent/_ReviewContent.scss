@@ -1,0 +1,17 @@
+.review-video {
+  position: relative;
+}
+
+.review-video .play-btn {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+}

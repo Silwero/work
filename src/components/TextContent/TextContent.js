@@ -1,6 +1,5 @@
 import React from 'react';
 import Icons from './../Icons/Icons';
-import './TextContent.css';
 
 const TextContent = (props) => {
   const Icon = Icons[props.icon];

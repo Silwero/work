@@ -1,19 +1,18 @@
-import './CheckProduct.css';
-
 import React from 'react';
 import { Row, Container, Col } from 'reactstrap';
 import Slider from 'react-slick';
 import Rating from './../Rating/Rating';
 import SelectSize from './../SelectSize/SelectSize';
+import Icons from './../Icons/Icons';
 
 const CheckProduct = (props) => {
-  const settings = {
+  const sliderSettings = {
     dots: false,
     arrows: false
   };
 
   let images = props.images.map((img, i) => {
-    return <div className="product-slide">
+    return <div key={'slider-img' + i} className="product-slide">
       <div><img src={img} alt={props.header}/></div>
     </div>;
   });
@@ -23,7 +22,7 @@ const CheckProduct = (props) => {
       <Container>
         <Row>
           <Col lg="7">
-            <Slider {...settings} >
+            <Slider {...sliderSettings} >
               {images}
             </Slider>
           </Col>
@@ -34,6 +33,9 @@ const CheckProduct = (props) => {
               {props.description}
             </div>
             <SelectSize />
+            <div className="product-footer-link">
+              <a href="#1"><Icons.affirm classes="inline-icon" /> As low as $67/month at 0% APR. Pre-qualify</a>
+            </div>
           </Col>
         </Row>
       </Container>

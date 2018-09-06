@@ -1,0 +1,23 @@
+.navigation {
+  font-size: rem(14);
+  line-height: em(21, 14);
+  display: flex;
+  align-items: center;
+
+  & > div {
+    border-right: 1px solid $extraLightGray;
+
+    > :last-child {
+      background-repeat: 0;
+    }
+  }
+}
+
+.cart {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  cursor: pointer;
+}

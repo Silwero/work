@@ -1,6 +1,5 @@
 import React from 'react';
 import Icons from './../../components/Icons/Icons';
-import './Section.css';
 import Columns from './../../components/Columns/Columns';
 import { Container } from 'reactstrap';
 import Rating from './../../components/Rating/Rating';

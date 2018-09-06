@@ -1,6 +1,7 @@
 import React from 'react';
 import Icons from './../Icons/Icons';
-import './ReviewContent.css';
+import Button from './../../baseComponents/Button/Button';
+import ReviewerInfo from './../Review/ReviewerInfo/ReviewerInfo';
 
 const ReviewContent = (props) => {
 
@@ -8,25 +9,13 @@ const ReviewContent = (props) => {
     <div className="review">
       <div className="review-video">
         <div className="play-btn">
-          <Icons.play />
+          <Button>
+            <Icons.play />
+          </Button>
         </div>
         <img src={props.img} alt={props.name} />
       </div>
-      <div className="reviewer">
-        <div className="avatar-wrapper">
-          <div className="avatar">
-            <img src={props.avatar} alt={props.name} />
-          </div>
-        </div>
-        <div className="reviewer-info">
-          <div className="reviewer-name">
-            {props.name}
-          </div>
-          <div className="reviewer-type">
-            {props.user}
-          </div>
-        </div>
-      </div>
+      <ReviewerInfo name={props.name} info={props.user} avatar={props.avatar} />
     </div>
   );
 };

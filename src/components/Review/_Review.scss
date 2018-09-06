@@ -1,0 +1,50 @@
+.review-section {
+  text-align: center;
+  padding-bottom: 100px;
+
+  .review {
+    @extend %desctop-quote-large;
+    color: $primaryBlue;
+  }
+}
+
+.review {
+
+  blockquote {
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 744px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    .quote {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.quote::before,
+.quote::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  width: 100vw;
+  height: 1px;
+  background: #C6E5F1;
+}
+
+.quote::before {
+  transform: translateX(-100%);
+  margin-left: -5px;
+  left: 0;
+}
+
+.quote::after {
+  right: 0;
+  transform: translateX(100%);
+  margin-right: -5px;
+}

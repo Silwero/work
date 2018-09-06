@@ -11,6 +11,7 @@ import Avatar2 from '../../assets/avatars/avatar-2.jpg';
 import Avatar3 from '../../assets/avatars/avatar-3.jpg';
 import CheckProduct from './../../components/CheckProduct/CheckProduct';
 import SliderImage from '../../assets/images/slider-img.jpg';
+import Review from './../../components/Review/Review';
 
 class MatresPage extends Component {
   state = {
@@ -166,6 +167,23 @@ class MatresPage extends Component {
       description: 'With patented TriSupport design guaranteed to relieve pain and improve sleep.',
       rating: 5,
       images: [SliderImage, SliderImage, SliderImage, SliderImage, SliderImage]
+    },
+    sectionWarranty: {
+      icon: 'certify',
+      header: '365 Night Trial and Forever Warranty',
+      description: '“The Level mattress is a wonderful experience. Delivery was fast and set up was easy. I’m already sleeping better and noticing the varied support in the mattress provides pain free, relaxed sleep.”',
+      reviewer: {
+        name: 'Alex R.',
+        from: 'Austin, TX'
+      }
+    },
+    reviewSection: {
+      review: 'I noticed less tossing & turning the first night I slept on my Level mattress. After a few more nights, I realized I wasn\'t snoring as much if at all! I like its firmness. I\'m quite comfortable sleeping on my back or side. I\'m very happy with my new mattress!',
+      reviewer: {
+        avatar: Avatar1,
+        name: 'Catherine S.',
+        userType: 'Denver CO'
+      }
     }
   }
 
@@ -209,6 +227,9 @@ class MatresPage extends Component {
           img={this.state.section4.img}
           description={this.state.section4.description}
           columns={this.state.section4.columnsData} />
+        <Review
+          review={this.state.reviewSection.review}
+          reviewer={this.state.reviewSection.reviewer} />
         <Section
           dark
           wrappedColumns

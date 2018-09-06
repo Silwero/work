@@ -1,7 +1,6 @@
 import React from 'react';
 import MainNav from './MainNav/MainNav';
 import ContactUs from './ContactUs/ContactUs';
-import './Navigation.css';
 import Icons from './../Icons/Icons';
 
 const Navigation = () => {

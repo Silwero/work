@@ -1,0 +1,145 @@
+@import './variables.scss';
+@import './functions.scss';
+
+// clearfix
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// List reset
+%listreset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Ellipsis
+%ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// default transition
+%transition {
+  transition: all .3s;
+}
+
+// clearfix
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// Default styles
+%h1 {
+  font-family: $generalFont;
+  font-size: rem(64);
+  line-height: em(64, 64);
+  font-weight: normal;
+}
+
+%h2 {
+  font-family: $generalFont;
+  font-size: rem(44);
+  line-height: em(44, 44);
+  font-weight: normal;
+}
+
+%h3 {
+  font-family: $secondaryFont;
+  font-size: rem(18);
+  line-height: em(21, 18);
+  font-weight: bold;
+}
+
+%h4 {
+  font-family: $subFont;
+  font-size: rem(16);
+  line-height: em(20, 16);
+  font-weight: normal;
+}
+
+%h5 {
+  font-family: $subFont;
+  font-size: rem(18);
+  line-height: em(25/18);
+  font-weight: normal;
+  letter-spacing: -1%;
+}
+
+%h6 {
+  font-family: $subFont;
+  font-size: rem(14);
+  line-height: em(20, 14);
+  font-weight: normal;
+}
+
+%mobile-facts-h {
+  font-family: $generalFont;
+  font-size: rem(24);
+  line-height: em(25, 24);
+}
+
+%mobile-h2 {
+  font-size: rem(30);
+  font-family: $generalFont;
+  line-height: em(31, 30);
+}
+
+%mobile-h3 {
+  font-size: rem(18);
+  line-height: em(21, 18);
+  font-weight: bold;
+  font-family: $secondaryFont;
+}
+
+%mobile-promo {
+  font-size: rem(11);
+  font-weight: bold;
+  font-family: $secondaryFont;
+  line-height: em(13, 11);
+}
+
+%mobile-h4 {
+  font-size:  rem(14);
+  font-weight: bold;
+  line-height: em(21, 14);
+  font-family: $secondaryFont;
+}
+
+%mobile-p {
+  font-size: rem(18);
+  font-weight: normal;
+  line-height: rem(25, 18);
+  font-family:  $subFont;
+
+}
+
+%mobile-p-medium {
+  font-size: rem(16);
+  line-height: em(20, 16);
+  font-weight: normal;
+  font-family: $subFont;
+}
+
+%mobile-p-small {
+  font-size: rem(14);
+  line-height: em(20, 16);
+  font-weight: normal;
+  font-family: $subFont;
+}
+
+%desctop-quote-large {
+  font-size: rem(36);
+  line-height: em(38, 36);
+  letter-spacing: -.01em;
+}

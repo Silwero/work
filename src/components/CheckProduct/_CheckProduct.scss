@@ -1,0 +1,14 @@
+.check-product {
+  padding: 50px 0;
+}
+
+.product-footer-link {
+  text-align: center;
+  @extend %mobile-h4;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.product-description {
+  margin-bottom: 30px;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
-import './Columns.css';
+import { Col } from 'reactstrap';
 import ReviewContent from './../ReviewContent/ReviewContent';
 import TextContent from './../TextContent/TextContent';
 import Slider from 'react-slick';

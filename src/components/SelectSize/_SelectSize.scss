@@ -1,0 +1,36 @@
+.select-size-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7px 9px;
+}
+
+.select-size {
+  padding-top: 30px;
+  border-top: 1px solid $lightGray;
+}
+
+.select-size-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.select-size-details-link {
+  @extend %mobile-promo;
+  text-decoration: underline;
+}
+
+.select-size-title {
+  @extend %mobile-h4;
+}
+
+.add-pillow {
+  padding-top: 18px;
+  border-top: 1px solid $lightGray;
+  @extend %mobile-h4;
+  color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}

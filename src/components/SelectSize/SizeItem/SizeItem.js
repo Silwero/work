@@ -1,11 +1,16 @@
 import React from 'react';
-import './SizeItem.css';
 
 const SizeItem = (props) => {
   return (
-    <div className="selecteble-item">
-      {props.size.name}
-      {props.size.price}
+    <div className="size-item-wrapper" onClick={props.checkItem}>
+      <div className={'size-item' + (props.selected ? ' selected-size' : '')}>
+        <div className="size">
+          {props.size.name}
+        </div>
+        <div className="price">
+          {props.size.price}
+        </div>
+      </div>
     </div>
   );
 };
