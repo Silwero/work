@@ -17,9 +17,20 @@ button {
   width: 100%;
   border-radius: 34px;
   margin: 10px 0;
+  padding: 0 15px;
   transition: all .3s;
 }
 
 .btn-base:hover {
   background: $black;
+}
+
+.btn-inline {
+  display: inline-block;
+  width: auto;
+  min-width: 193px;
+}
+
+.btn-sm {
+  height: 50px;
 }

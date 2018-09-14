@@ -1,0 +1,17 @@
+.details-paragraph {
+  @extend %mobile-p;
+
+  h4 {
+    @extend %mobile-h3;
+  }
+
+  ul {
+    @extend %listreset;
+    margin-bottom: 30px;
+    line-height: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

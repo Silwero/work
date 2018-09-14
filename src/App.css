@@ -1270,7 +1270,7 @@ template {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
-.main-nav ul {
+.main-nav ul, .details-paragraph ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -1318,42 +1318,48 @@ h6,
   line-height: 1.42857em;
   font-weight: normal; }
 
-.column-wrapped h3 {
+.mobile-facts-h, .desctop-quote-large {
+  font-family: "Adobe Caslon Pro", "Source Serif Pro", "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 1.04167em; }
+
+.mobile-h2, .column-wrapped h3, .bordered-column h3 {
   font-size: 1.875rem;
   font-family: "Adobe Caslon Pro", "Source Serif Pro", "Times New Roman", serif;
-  line-height: 1.03333em; }
+  line-height: 1.03333em;
+  font-weight: normal; }
 
-.btn-base, .size-item .size {
+.mobile-h3, .btn-base, .size-item .size, .details-paragraph h4, .details-table td:first-child {
   font-size: 1.125rem;
   line-height: 1.16667em;
   font-weight: bold;
   font-family: "Gilroy", "Roboto", Arial, sans-serif; }
 
-.select-size-details-link {
+.mobile-promo, .select-size-details-link {
   font-size: 0.6875rem;
   font-weight: bold;
   font-family: "Gilroy", "Roboto", Arial, sans-serif;
   line-height: 1.18182em; }
 
-.checkbox, .product-footer-link, .select-size-title, .add-pillow, .size-item .price {
+.mobile-h4, .checkbox, .product-footer-link, .select-size-title, .add-pillow, .size-item .price {
   font-size: 0.875rem;
   font-weight: bold;
   line-height: 1.5em;
   font-family: "Gilroy", "Roboto", Arial, sans-serif; }
 
-body, .column-description {
+body, .mobile-p, .column-description, .details-paragraph, .details-table td:last-child {
   font-size: 1.125rem;
   font-weight: normal;
   line-height: 1.38889rem;
   font-family: "Vollkorn", "Times New Roman", serif; }
 
-.column-wrapped .column-description, .reviewer-name {
+.mobile-p-medium, .column-wrapped .column-description, .reviewer-name {
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: normal;
   font-family: "Vollkorn", "Times New Roman", serif; }
 
-.reviewer-type {
+.mobile-p-small, .reviewer-type {
   font-size: 0.875rem;
   line-height: 1.25em;
   font-weight: normal;
@@ -1407,10 +1413,19 @@ button {
   width: 100%;
   border-radius: 34px;
   margin: 10px 0;
+  padding: 0 15px;
   transition: all .3s; }
 
 .btn-base:hover {
   background: #1a1a1a; }
+
+.btn-inline {
+  display: inline-block;
+  width: auto;
+  min-width: 193px; }
+
+.btn-sm {
+  height: 50px; }
 
 .checkbox {
   cursor: pointer;
@@ -1462,6 +1477,8 @@ button {
     color: #fff;
     font-size: 2.25rem;
     line-height: 1.02778em; }
+  .section-dark .section-description {
+    color: #fff; }
 
 .section-top-icon {
   background: #f7f7f7;
@@ -1535,7 +1552,7 @@ button {
     left: 0;
     transform: translateX(-100%); }
 
-.check-product {
+.col-with-aside-img {
   padding: 50px 0; }
 
 .product-footer-link {
@@ -1777,3 +1794,42 @@ button {
   justify-content: center; }
   .avatar img {
     width: 48px; }
+
+.two-bordered-columns {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 865px;
+  margin: 0 auto; }
+
+.bordered-column {
+  border-top: 1px solid #fff;
+  width: 385px;
+  padding-top: 50px; }
+  .bordered-column h3 {
+    margin-bottom: 25px; }
+
+.details-paragraph ul {
+  margin-bottom: 30px;
+  line-height: 25px; }
+  .details-paragraph ul:last-child {
+    margin-bottom: 0; }
+
+.details-table table {
+  width: 100%;
+  table-layout: fixed; }
+
+.details-table td {
+  padding: 3px 0; }
+
+.details-table td:first-child {
+  line-height: 25px; }
+
+.details-table td:last-child {
+  text-align: right;
+  line-height: 25px; }
+
+.rewards {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 50px 0; }

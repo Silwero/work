@@ -1,0 +1,22 @@
+.details-table {
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  td {
+    padding: 3px 0;
+  }
+
+  td:first-child {
+    @extend %mobile-h3;
+    line-height: 25px;
+  }
+
+  td:last-child {
+    text-align: right;
+    @extend %mobile-p;
+    line-height: 25px;
+  }
+}

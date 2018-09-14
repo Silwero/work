@@ -21,6 +21,7 @@
 @import './global/Footer/Footer';
 
 // Components
+@import './components/ColWithAsideImg/ColWithAsideImg';
 @import './components/CheckProduct/CheckProduct';
 @import './components/Columns/Columns';
 @import './components/Icons/Icons';
@@ -35,3 +36,8 @@
 @import './components/TextContent/TextContent';
 @import './components/Review/Review';
 @import './components/Review/ReviewerInfo/ReviewerInfo';
+@import './components/TwoBorderedColumns/TwoBorderedColumns';
+@import './components/TwoBorderedColumns/Column/Column';
+@import './components/DetailsParagraph/DetailsParagraph';
+@import './components/DetailsTable/DetailsTable';
+@import './components/Rewards/Rewards';

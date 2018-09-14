@@ -3,6 +3,7 @@ import Icons from './../../components/Icons/Icons';
 import Columns from './../../components/Columns/Columns';
 import { Container } from 'reactstrap';
 import Rating from './../../components/Rating/Rating';
+import TwoBorderedColumns from './../../components/TwoBorderedColumns/TwoBorderedColumns';
 
 
 const Section = (props) => {
@@ -41,6 +42,11 @@ const Section = (props) => {
     rating = <Rating stars={props.rating} />;
   }
 
+  let borderedColumns = null;
+  if (props.borderedColumns) {
+    borderedColumns = <TwoBorderedColumns />;
+  }
+
   return (
     <section className={'section' + (props.dark ? ' section-dark' : '') + (props.bordered ? ' section-bordered' : '')}>
       <Container>
@@ -55,6 +61,7 @@ const Section = (props) => {
         </div>
         {img}
         {columns}
+        {borderedColumns}
       </Container>
     </section>
   );

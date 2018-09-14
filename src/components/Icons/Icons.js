@@ -19,6 +19,10 @@ import StarIcon from './star';
 import affirmLogo from './affirmLogo';
 import Certify from './certify';
 import Quotemark from './quotemark';
+import Detail from './detail';
+import Thumb from './thumb';
+import Recco from './recco';
+import Affirm from './affirm';
 
 const Icons = {
   speechbubble: SpeechBubble,
@@ -38,9 +42,13 @@ const Icons = {
   comments: CommentsIcon,
   play: PlayIcon,
   star: StarIcon,
-  affirm: affirmLogo,
+  affirmLogo: affirmLogo,
   certify: Certify,
-  quotemark: Quotemark
+  quotemark: Quotemark,
+  detail: Detail,
+  thumb: Thumb,
+  affirm: Affirm,
+  recco: Recco
 };
 
 export default Icons;

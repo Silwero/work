@@ -9,9 +9,13 @@ import ImageReview3 from '../../assets/images/review-3.jpg';
 import Avatar1 from '../../assets/avatars/avatar-1.jpg';
 import Avatar2 from '../../assets/avatars/avatar-2.jpg';
 import Avatar3 from '../../assets/avatars/avatar-3.jpg';
-import CheckProduct from './../../components/CheckProduct/CheckProduct';
+import ColWithAsideImg from './../../components/ColWithAsideImg/ColWithAsideImg';
 import SliderImage from '../../assets/images/slider-img.jpg';
 import Review from './../../components/Review/Review';
+import Pillow from '../../assets/images/pillow.png';
+import CheckProduct from './../../components/CheckProduct/CheckProduct';
+import Button from './../../baseComponents/Button/Button';
+import Rewards from './../../components/Rewards/Rewards';
 
 class MatresPage extends Component {
   state = {
@@ -184,17 +188,32 @@ class MatresPage extends Component {
         name: 'Catherine S.',
         userType: 'Denver CO'
       }
+    },
+    sectionDetails: {
+      icon: 'detail',
+      header: 'Product Details',
+      description: 'All our products are made in the USA of non-toxic materials. If you\'d like to learn more about the order and shipment process, please visit our FAQs.'
+    },
+    pillowSection: {
+      header: 'Restore Pillow',
+      description: '<ul><li>Patented design to align neck and reduce pain</li><li>Natural spinal support to open airways and reduce snoring</li></ul>',
+      rating: 5,
+      images: [Pillow]
     }
   }
 
   render() {
     return (
       <div className="matres-page">
-        <CheckProduct
+        <ColWithAsideImg
           description={this.state.checkProduct.description}
           rating={this.state.checkProduct.rating}
           images={this.state.checkProduct.images}
-          header={this.state.checkProduct.header} />
+          header={this.state.checkProduct.header}
+          headerClass="desctop-h1">
+
+          <CheckProduct />
+        </ColWithAsideImg>
         <Section
           header={this.state.section1.header}
           icon={this.state.section1.icon}
@@ -236,6 +255,21 @@ class MatresPage extends Component {
           topIcon={this.state.section5.topIcon}
           header={this.state.section5.header}
           columns={this.state.section5.columnsData} />
+        <Section
+          dark
+          icon={this.state.sectionDetails.icon}
+          description={this.state.sectionDetails.description}
+          header={this.state.sectionDetails.header}
+          borderedColumns />
+        <ColWithAsideImg
+          rating={this.state.pillowSection.rating}
+          header={this.state.pillowSection.header}
+          images={this.state.pillowSection.images}
+          headerClass="mobile-h2"
+          description={this.state.pillowSection.description}>
+          <Button className="btn-base btn-inline btn-sm">Shop Pillow</Button>
+        </ColWithAsideImg>
+        <Rewards />
       </div>
     );
   }

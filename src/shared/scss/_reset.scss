@@ -62,3 +62,40 @@ h6,
 .h6 {
   @extend %h6
 }
+
+.mobile-facts-h {
+  @extend %mobile-facts-h;
+}
+
+.mobile-h2 {
+  @extend %mobile-h2;
+}
+
+.mobile-h3 {
+  @extend %mobile-h3;
+}
+
+.mobile-promo {
+  @extend %mobile-promo;
+}
+
+.mobile-h4 {
+  @extend %mobile-h4;
+}
+
+.mobile-p {
+  @extend %mobile-p;
+
+}
+
+.mobile-p-medium {
+  @extend %mobile-p-medium;
+}
+
+.mobile-p-small {
+  @extend %mobile-p-small;
+}
+
+.desctop-quote-large {
+  @extend %mobile-facts-h;
+}

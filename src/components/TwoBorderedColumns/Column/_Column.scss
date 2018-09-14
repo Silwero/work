@@ -1,0 +1,10 @@
+.bordered-column {
+  border-top: 1px solid $white;
+  width: 385px;
+  padding-top: 50px;
+
+  h3 {
+    @extend %mobile-h2;
+    margin-bottom: 25px;
+  }
+}
