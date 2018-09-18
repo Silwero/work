@@ -2,8 +2,6 @@ import React from 'react';
 import { Row, Container, Col } from 'reactstrap';
 import Slider from 'react-slick';
 import Rating from '../Rating/Rating';
-import SelectSize from '../SelectSize/SelectSize';
-import Icons from '../Icons/Icons';
 
 const ColWithAsideImg = (props) => {
   const sliderSettings = {
@@ -29,11 +27,11 @@ const ColWithAsideImg = (props) => {
   return (
     <section className="col-with-aside-img">
       <Container>
-        <Row className="img-left">
+        <Row className={props.isReverse ? 'flex-row-reverse' : ''}>
           <Col lg="7">
             {images}
           </Col>
-          <Col lg="5">
+          <Col lg="5" className="content-col">
             <h2 className={props.headerClass}>{props.header}</h2>
             <Rating stars={props.rating} />
             <div className="product-description" dangerouslySetInnerHTML={{__html: props.description}}></div>

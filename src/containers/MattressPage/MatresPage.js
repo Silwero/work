@@ -16,6 +16,8 @@ import Pillow from '../../assets/images/pillow.png';
 import CheckProduct from './../../components/CheckProduct/CheckProduct';
 import Button from './../../baseComponents/Button/Button';
 import Rewards from './../../components/Rewards/Rewards';
+import SectionWithBackground from './../../components/SectionWithBackground/SectionWithBackground';
+import SectionBg from '../../assets/images/section-bg.jpg';
 
 class MatresPage extends Component {
   state = {
@@ -199,6 +201,16 @@ class MatresPage extends Component {
       description: '<ul><li>Patented design to align neck and reduce pain</li><li>Natural spinal support to open airways and reduce snoring</li></ul>',
       rating: 5,
       images: [Pillow]
+    },
+    sectionWithBackground: {
+      header: '365 Night Trial and Forever Warranty',
+      icon: 'certify',
+      description: '“The Level mattress is a wonderful experience. Delivery was fast and set up was easy. I’m already sleeping better and noticing the varied support in the mattress provides pain free, relaxed sleep.”',
+      reviewer: {
+        name: 'Alex R.',
+        info: 'Austin, TX',
+        avatar: Avatar1
+      }
     }
   }
 
@@ -255,6 +267,11 @@ class MatresPage extends Component {
           topIcon={this.state.section5.topIcon}
           header={this.state.section5.header}
           columns={this.state.section5.columnsData} />
+        <SectionWithBackground
+          header={this.state.sectionWithBackground.header}
+          bg={SectionBg}
+          description={this.state.sectionWithBackground.description}
+          reviewer={this.state.sectionWithBackground.reviewer} />
         <Section
           dark
           icon={this.state.sectionDetails.icon}
@@ -266,6 +283,7 @@ class MatresPage extends Component {
           header={this.state.pillowSection.header}
           images={this.state.pillowSection.images}
           headerClass="mobile-h2"
+          isReverse
           description={this.state.pillowSection.description}>
           <Button className="btn-base btn-inline btn-sm">Shop Pillow</Button>
         </ColWithAsideImg>

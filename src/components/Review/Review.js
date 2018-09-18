@@ -17,7 +17,7 @@ const Review = (props) => {
         </div>
         <ReviewerInfo
           colored
-          vertival
+          vertical
           name={props.reviewer.name}
           info={props.reviewer.userType}
           avatar={props.reviewer.avatar} />

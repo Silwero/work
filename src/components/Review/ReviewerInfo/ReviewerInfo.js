@@ -4,8 +4,8 @@ const ReviewerInfo = (props) => {
   return (
     <div className={
       'reviewer' +
-      (props.vertival ? ' reviewer-vertical' : '') +
-      (props.vertival ? ' reviewer-primary-color' : '')}>
+      (props.vertical ? ' reviewer-vertical' : '') +
+      (props.colored ? ' reviewer-primary-color' : '')}>
       <div className="avatar-wrapper">
         <div className="avatar">
           <img src={props.avatar} alt={props.name} />

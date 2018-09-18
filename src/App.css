@@ -1278,8 +1278,8 @@ template {
 h1,
 .h1 {
   font-family: "Adobe Caslon Pro", "Source Serif Pro", "Times New Roman", serif;
-  font-size: 4rem;
-  line-height: 1em;
+  font-size: 2.75rem;
+  line-height: 1.02273em;
   font-weight: normal; }
 
 h2,
@@ -1329,7 +1329,7 @@ h6,
   line-height: 1.03333em;
   font-weight: normal; }
 
-.mobile-h3, .btn-base, .size-item .size, .details-paragraph h4, .details-table td:first-child {
+.mobile-h3, .btn-base, .size-item .size, .details-paragraph h4, .details-table td:first-child, .rewards-text span {
   font-size: 1.125rem;
   line-height: 1.16667em;
   font-weight: bold;
@@ -1518,7 +1518,8 @@ button {
   box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15);
   padding: 0 0 0 20px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  z-index: 2; }
   .header .logo {
     margin-right: auto; }
 
@@ -1554,6 +1555,10 @@ button {
 
 .col-with-aside-img {
   padding: 50px 0; }
+  .col-with-aside-img .flex-row-reverse {
+    padding-top: 50px; }
+    .col-with-aside-img .flex-row-reverse .content-col {
+      padding-top: 75px; }
 
 .product-footer-link {
   text-align: center;
@@ -1592,6 +1597,21 @@ button {
 
 .section-icon {
   margin-bottom: 30px; }
+
+.svg-main {
+  fill: #828282; }
+
+.svg-main-stroke {
+  stroke: #828282; }
+
+.svg-secondary {
+  fill: #1a1a1a; }
+
+.svg-with-bg {
+  fill: #fff; }
+
+svg {
+  max-width: 100%; }
 
 .navigation {
   font-size: 0.875rem;
@@ -1640,6 +1660,8 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px; }
+  .rating .svg-main {
+    fill: #009bd8; }
 
 .rating-link a {
   font-size: 0.875rem;
@@ -1830,6 +1852,49 @@ button {
   line-height: 25px; }
 
 .rewards {
-  max-width: 890px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0; }
+
+.section-with-background-img {
+  padding: 120px 0 171px;
+  background-size: cover;
+  background-position: 50% 50%; }
+  .section-with-background-img .col-lg-5 {
+    padding-right: 0; }
+
+.rewards-column {
+  display: flex;
+  align-items: center; }
+  .rewards-column .svg-main {
+    fill: #828282; }
+  .rewards-column .svg-main-stroke {
+    stroke: #828282; }
+
+.rewards-text {
+  padding-left: 20px;
+  color: #828282; }
+
+.reward-rating {
+  margin-bottom: 9px; }
+  .reward-rating .icon {
+    width: 17px; }
+
+.reward-icon {
+  min-width: 184px;
+  max-width: 184px; }
+
+.reward-rating .svg-main {
+  fill: #828282; }
+
+.bonuses {
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 46px; }
+  .bonuses .icon {
+    padding: 0 10px; }
+    .bonuses .icon:first-child {
+      padding-left: 0; }
+    .bonuses .icon:last-child {
+      margin-right: -30px;
+      padding-right: 0; }

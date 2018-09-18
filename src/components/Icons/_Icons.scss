@@ -13,3 +13,23 @@
 .section-icon {
   margin-bottom: 30px;
 }
+
+.svg-main {
+  fill:#828282;
+}
+
+.svg-main-stroke {
+  stroke: #828282;
+}
+
+.svg-secondary {
+  fill: $black;
+}
+
+.svg-with-bg {
+  fill: $white;
+}
+
+svg {
+  max-width: 100%;
+}

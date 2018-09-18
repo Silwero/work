@@ -23,6 +23,10 @@ import Detail from './detail';
 import Thumb from './thumb';
 import Recco from './recco';
 import Affirm from './affirm';
+import Icon365 from './365';
+import Forever from './forever';
+import certipur from './certipur';
+import freeshipping from './freeshipping';
 
 const Icons = {
   speechbubble: SpeechBubble,
@@ -48,6 +52,10 @@ const Icons = {
   detail: Detail,
   thumb: Thumb,
   affirm: Affirm,
+  icon365: Icon365,
+  forever: Forever,
+  certipur: certipur,
+  freeshipping: freeshipping,
   recco: Recco
 };
 

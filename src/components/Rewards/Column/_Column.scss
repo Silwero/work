@@ -1,0 +1,38 @@
+.rewards-column {
+  display: flex;
+  align-items: center;
+
+  .svg-main {
+    fill: $mediumGray;
+  }
+
+  .svg-main-stroke {
+    stroke: $mediumGray;
+  }
+}
+
+.rewards-text {
+  padding-left: 20px;
+  color: $mediumGray;
+
+  span {
+    @extend %mobile-h3;
+  }
+}
+
+.reward-rating {
+  margin-bottom: 9px;
+
+  .icon {
+    width: 17px;
+  }
+}
+
+.reward-icon {
+  min-width: 184px;
+  max-width: 184px;
+}
+
+.reward-rating .svg-main {
+  fill: $mediumGray;
+}

@@ -1,5 +1,13 @@
 .col-with-aside-img {
   padding: 50px 0;
+
+  .flex-row-reverse {
+    padding-top: 50px;
+
+    .content-col {
+      padding-top: 75px;
+    }
+  }
 }
 
 .product-footer-link {

@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+
+  .svg-main {
+    fill: $primaryBlue;
+  }
 }
 
 .rating-link a {

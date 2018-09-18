@@ -29,8 +29,8 @@ const DetailsTable = (props) => {
 
   ];
 
-  let table = tableData.map((row) => {
-    return <tr>
+  let table = tableData.map((row, i) => {
+    return <tr key={'table-row' + i}>
       <td>{row.name}</td>
       <td>{row.size}</td>
     </tr>;
@@ -39,7 +39,9 @@ const DetailsTable = (props) => {
   return (
     <div className="details-table">
       <table>
-        {table}
+        <tbody>
+          {table}
+        </tbody>
       </table>
     </div>
   );
